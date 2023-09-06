@@ -3,6 +3,18 @@ body {
   margin: 0;
 }
 
+button {
+  background: #3882f6;
+  color: #f9faf8;
+
+  border: 0;
+  border-radius: 8px;
+  padding: 8px 36px;
+
+  font-size: 18px;
+  font-weight: bold;
+}
+
 /* HEADER */
 
 header {
@@ -61,28 +73,134 @@ nav div a {
 }
 
 .hero-text p {
+  margin-top: 0;
+
   color: #e5e7eb;
   font-size: 18px;
 }
 
-.hero-text button {
-  background: #3882f6;
-  color: #f9faf8;
-
-  border: 0;
-  border-radius: 8px;
-  padding: 8px 36px;
-
-  font-size: 18px;
-  font-weight: bold;
-}
-
 .hero img {
-  width: 600px;
-  height: auto;
+  width: 500px;
+  height: 225px;
   
-  flex: 1;
+  flex: 0;
 }
 
 /* INFORMATION */
 
+.information {
+  margin: 24px auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.information h1 {
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: bolder;
+}
+
+/* INFORMATION - CARD AREA */
+
+.card-area {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 16px 24px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  
+  border: solid #3882f6 4px;
+  border-radius: 16px;
+}
+
+.card p {
+  width: 150px;
+  margin: 4px 0;
+  padding: 0;
+
+  text-align: center;
+  color: #777
+}
+
+/* QUOTE */
+
+.quote {
+  margin: 124px auto;
+  padding: 144px 24px;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: #e5e7eb;
+}
+
+.quote div {
+  width: 780px;
+}
+
+.quote div blockquote {
+  margin: 0;
+
+  color: #1f2937;
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.quote div p {
+  margin: auto 24px;
+
+  text-align: right;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* CALL TO ACTION */
+
+.cta {
+  margin: 120px 240px;
+  padding: 48px 120px;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: white;
+  background-color: #3882f6;
+}
+
+.cta div h2, .cta div p {
+  margin: 0;
+}
+
+.cta div p {
+  color: #e5e7eb;
+}
+
+.cta button {
+  border: solid white 2px;
+}
+
+/* FOOTER */
+
+footer {
+  margin: 0;
+  padding: 16px;
+
+  background-color: #1f2937;
+  color: #e5e7eb;
+  text-align: center;
+}
